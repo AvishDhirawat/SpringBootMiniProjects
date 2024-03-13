@@ -1,8 +1,10 @@
 package com.springpractice.microservices.limitsservice.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
-@ConfigurationProperties("limit-service") // This will take configuration named "limit-service" from application.properties
+@Component
+@ConfigurationProperties("limits-service") // This will take configuration named "limit-service" from application.properties
 public class Configuration {
     private int minimum;
     private int maximum;
